@@ -1,0 +1,463 @@
+/*--The top panel through out the website ---*/
+
+.panel{
+
+        align-content: center;
+        align-items: center;
+        background-color: #dee1e6;
+        border-bottom: 1px;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-top: -8px;
+        
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+}
+.logo{
+    border: 3px solid cadetblue;
+    font-size: 30px;
+    width: 300px;
+    background-color: whitesmoke;
+
+
+
+ margin-left: 60px;
+
+}
+.logo span{
+    color: orange;
+}
+
+/*----navigation bar through-out all the pages---*/
+nav{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color:none;
+    background-image: url("./images/bg-intro.jpg");
+    background-size:1500px 400px ;
+    border-radius: 50px;
+
+}
+nav ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  
+    display: inline-block;
+    list-style:none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 14px 16px;
+    position: relative;
+    background-color: white;
+ 
+    font-size: 17px;
+}
+nav ul li:hover {
+    background-color: orange;
+
+}
+nav ul li a{
+  color:black;
+    text-decoration: none;
+
+
+
+}
+.nav ul li a:hover {
+    color:black;
+      text-decoration: none;
+      border: 2px solid blueviolet; 
+  }
+
+/*---when user clicks---*/
+nav ul li a:active{
+    background-color: aqua;
+    border-bottom:none;
+}
+
+/*---when the user is in the current page---*/
+.active-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color:orange;
+    border: 3px solid blue;
+
+    width:300px;
+    
+    
+}
+
+
+
+
+/*---Home page or index.html(style)----*/
+.head{
+    border: none;
+background-color:rgb(218, 215, 215);
+
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    height:200px;
+    width: 100%;
+   
+    margin-top: none;
+ 
+    
+ 
+}
+.head-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+.head-text h1{
+    font-size: 40px;
+    margin-top:20px;
+
+}
+.head-text h1 span{
+    color: rebeccapurple;
+}
+.text0{
+    text-align: left;
+    color:red;
+
+}
+.text1{
+    text-align: left;
+    color:rgb(27, 26, 26);
+    transition:  background-color  0.15s;
+}
+.text2{
+    text-align: left;
+    color:rgb(26, 25, 25);
+    transition: 3s;
+}
+
+.head:hover{
+    border: none;
+    background-color:rgb(218, 215, 215);
+    
+        font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+        height:200px;
+        width: 100%;
+        margin-top: 3px;
+     
+
+}
+
+.text1:hover{
+    text-align: left;
+    color:rgb(15, 13, 13);
+    opacity: 0.8;
+    
+
+}
+.text2:hover{
+    text-align: left;
+    color:rgb(194, 214, 15);
+
+}
+
+
+.info{
+    display: flex;
+    flex-direction: right;
+    background-image: url("./images/background-info.jpg");
+    background-size: 1350px 700px;
+    margin-top: 40px;
+    width:100%;
+    height: 600px;
+
+}
+.info:hover{
+    display: flex;
+    flex-direction: right;
+    background-image: url("./images/background-info.jpg");
+    background-size: 1350px 700px;
+    margin-top: 40px;
+    width:100%;
+    height: 700px;
+
+
+}
+
+.write{
+    color:rgb(155, 146, 146);
+    display:block;
+    font-size: 30px;
+    height: 600px;
+    width: 700px;
+    background-color: rgba(37, 29, 68, 0.479);
+
+
+}
+.write:hover{
+    color:rgb(155, 146, 146);
+    font-size: 30px;
+    height: 700px;
+    width: 700px;
+    background-color: rgb(37, 29, 68);
+
+}
+.txt:hover{
+     zoom:150%;
+     color:red;
+}
+.bodybox{
+    background-color: #b7c3c9;
+    border:none;
+    height:500px;
+    width:1200px;
+    margin-left: 70px;
+    margin-right:70px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 30px;
+    transition: box-shadow 1s;
+}
+.bodybox:hover {
+    box-shadow: 6px 6px 6px rgba(83, 80, 80, 0.603);
+}
+.templates{
+    margin-top: 100px;
+
+    border:none;
+    background-color: none;
+ 
+   display:flex;
+   flex-direction: right;
+   margin-left: 20px;
+   margin-right: 40px;
+   transition: box-shadow 1s;
+   padding-bottom: 20px;
+
+
+
+
+}
+.templates:hover {
+    box-shadow: 20px 20px 20px rgba(83, 80, 80, 0.603);
+
+}
+
+.phot{
+    border:none;
+    background-color: rgb(37, 37, 73);
+    height: 500px;
+    width:600px;
+    text-align: center;
+ 
+    margin-left: 50px;
+    margin-top: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+
+}
+.temp{
+    border:none;
+    background-color: none;
+    display:block;
+    text-align: center;
+    margin-right: 25px;
+
+  
+
+}
+.horizental{
+    text-align: center;
+ 
+    border:none;
+    background-color: #e7e9ea;
+    height:240px;
+    width:600px;
+    margin-left: 30px;
+
+    margin-bottom: 10px;
+    border-top-right-radius: 20px;
+    
+
+
+}
+.room{
+    text-align: center;
+    display:inline-block;
+    border:none;
+    background-color: rgb(129, 161, 159);
+    height: 240px;
+    width:290px;
+    margin-top: 10px;
+
+    margin-left: 19px;
+    border-bottom-right-radius: 20px;
+
+}
+.roomt{
+text-align: center;
+display:inline-block;
+border:none;
+background-color: rgb(129, 161, 159);
+height: 240px;
+width:290px;
+margin-top: 10px;
+margin-left: 24px;
+
+}
+
+
+.end{
+    
+    display: flex;
+    flex-direction: right;
+    background-image: url("");
+    background-size: 1350px 700px;
+    margin-top: 40px;
+    width:100%;
+    height: 600px;
+
+
+}
+
+.end:hover{
+    border-top:5px solid rgb(37, 37, 73);
+    border-bottom:5px solid rgb(37, 37, 73);
+    display: flex;
+    flex-direction: right;
+    background-color:black;
+    background-size: 1350px 700px;
+    margin-top: 40px;
+    width:100%;
+    height: 600px;
+    color:white;
+}
+
+
+/*---The portfolio page---*/
+.about{
+    margin-top: 30px;
+    display: flex;
+    flex-direction:right;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(37, 29, 68);
+    
+
+
+}
+
+.text-1{
+
+    text-align: center;
+
+    color:white;
+
+
+}
+.photo{
+
+    height: 400px;
+    width: 400px;
+    background-color: #b7c3c9ad;
+    margin:50px 25px;
+}
+.face{
+    border:5px cornflowerblue;
+    height: 380px;
+    width: 380px;
+}
+
+
+
+.portfolio{
+    text-align: center;
+    font-size: 30px;
+margin-top: 200px;
+    width: 100%;
+    height: auto;
+    background-color: none;
+    margin-bottom: 200px;
+
+
+}
+.service{
+
+    display:flex;
+    flex-direction: right;
+    height: 500px;
+    width:auto;
+    margin: 0 50px;
+   
+
+}
+
+
+
+.card{
+    height:500px;
+    width:400px;
+    background-color: rgb(119, 113, 113);
+    display: inline;
+    margin: 50px 50px;
+}
+
+
+/*---contact page---*/
+.contact{
+    
+    display: flex;
+    flex-direction: right;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.contact-info{
+    border:2px solid rgb(93, 93, 168);
+ height: 500px;
+ width:850px;
+ margin: 20px 40px;
+
+
+}
+.chat-box{
+    border:2px solid rgb(93, 93, 168);
+    height: 500px;
+    width:350px;
+    margin-top: 20px;
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .text-1{
+    display: block;
+    color: black;
+
+  }
+}
+
