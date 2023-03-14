@@ -1,0 +1,216 @@
+/*--The top panel through out the website ---*/
+
+.panel{
+
+    align-content: center;
+    align-items: center;
+    background-color: #dee1e6;
+    border-bottom: 1px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: -8px;
+    
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+.logo{
+border: 3px solid cadetblue;
+font-size: 30px;
+width: 300px;
+background-color: whitesmoke;
+
+
+
+margin-left: 60px;
+
+}
+.logo span{
+color: orange;
+}
+
+/*----navigation bar through-out all the pages---*/
+nav{
+display: flex;
+align-items: center ;
+justify-content: space-between;
+flex-wrap: wrap; 
+width: 100%;
+height: 200px;
+margin-top: 50px;
+margin-bottom: 100px;
+background-color:none;
+background-image: url("../images/bg-intro.jpg");
+background-size:1500px 400px ;
+border-radius: 50px;
+
+}
+nav ul li {
+margin-left: 10px;
+margin-right: 10px;
+
+display: inline-block;
+list-style:none;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 100;
+font-style: normal;
+padding: 14px 16px;
+position: relative;
+background-color: white;
+
+font-size: 17px;
+}
+nav ul li:hover {
+background-color: orange;
+
+}
+nav ul li a{
+color:black;
+text-decoration: none;
+
+
+
+}
+.nav ul li a:hover {
+color:black;
+  text-decoration: none;
+  border: 2px solid blueviolet; 
+}
+
+/*---when user clicks---*/
+nav ul li a:active{
+background-color: aqua;
+border-bottom:none;
+}
+
+/*---when the user is in the current page---*/
+.active-button {
+margin-left: 10px;
+margin-right: 10px;
+color:white;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 100;
+font-style: normal;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+background-color:orange;
+border: 3px solid blue;
+
+width:300px;
+
+
+}
+
+
+/*---contact page---*/
+.contact{
+    
+    display: flex;
+    flex-direction: right;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.contact-info{
+    border:2px solid rgb(93, 93, 168);
+ height: 500px;
+ width:850px;
+ margin: 20px 40px;
+}
+.grid-container{
+  display:flex;
+  flex-direction: right;
+
+}
+
+.grid-item1{
+  display: inline-block;
+  border:2px solid blueviolet;
+  height:400px;
+  width:400px;
+  row-gap: 50px;
+  column-gap: 50px;
+
+}
+
+.grid-item2{
+  display: inline-block;
+  border:2px solid blueviolet;
+  height:400px;
+  width:400px;
+
+}
+
+.grid-item3{
+  display: block;
+  border:2px solid blueviolet;
+  height:400px;
+  width:400px;
+
+}
+
+
+
+
+
+.chat-box{
+    border:2px solid rgb(93, 93, 168);
+    height: 500px;
+    width:350px;
+    margin-top: 20px;
+
+}
+.textarea{
+  height:50px;
+  width:300px;
+  margin-left:20px;
+  margin-right:10px;
+
+}
+.btn{
+  font-size: 20px;
+  color:white;
+  border:1px solid orangered;
+  background-color: orange;
+  display:inline-block;
+  margin-top: 5px;
+  padding: 16px 20px;
+  height: 50px;
+  width:100px;
+  align-items: center;
+
+}
+.btn-cancel{
+  font-size: 20px;
+  color:white;
+  border:1px solid orangered;
+  background-color: red;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 16px 20px;
+  height: 50px;
+  width:100px;
+  align-items: center;
+
+}
+.chat-input{
+  text-align: center;
+  border:2px solid blueviolet;
+  border-radius:50px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .text-1{
+    display: block;
+    color: black;
+
+  }
+}
+
