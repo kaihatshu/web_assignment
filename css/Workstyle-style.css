@@ -2,31 +2,29 @@
 
 .panel{
 
-    align-content: center;
-    align-items: center;
-    background-color: #dee1e6;
-    border-bottom: 1px;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    margin-top: -8px;
-    
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  background-color: #dee1e6;
+  border-bottom: 1px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: -8px;
+  
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }
 
-
 .head-background{
-   
+ 
   background-image: url("../images/bg-intro.jpg");
   background-size: 100%;
   border: 10px solid #abafb6;
   border-bottom: 20px solid #abafb6 ;
-  border-bottom-left-radius: 100px;
-  height: 400px;
+  height: 300px;
   margin-bottom: 30px;
 }
 .logo{
@@ -41,8 +39,63 @@ margin-left: 60px;
 .logo span{
 color: orange;
 }
+/*---homeburger-icon---*/
+
+body{
+  margin:0;
+
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height:8px;
+  --hamburger-gap:6px;
+  --foreground: #333;
+  --background:white;
+  --hamburger-margin: 8px;
+
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+
+  width: max-content;
+  position: absolute;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin);
+  z-index:2 ;
+  cursor: pointer;
+
+}
+.menu::before,
+.menu::after,
+.menu input{
+  content: "";
+  width:var(--bar-width);
+  height:var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+
+
+}
+
+.menu input {
+  appearance: none;
+  padding:0;
+  margin:0;
+  outline:none;
+  pointer-events:none;
+
+}
+.menu input:checked {
+opacity:0;
+width:0;
+
+}
 
 /*----navigation bar through-out all the pages---*/
+
 nav{
 display: flex;
 align-items: center ;
@@ -52,7 +105,7 @@ position: inherit;
 flex-wrap: wrap; 
 width: 100%;
 height: 200px;
-margin-top: 50px;
+margin-top:none;
 margin-bottom: 50px;
 background-color:rgba(75, 72, 72, 0.37);
 background-image: url("./images/bg-intro.jpg");
@@ -129,4 +182,155 @@ background-color:orange;
 width: 80px;
 
 
+}
+
+
+/*--burger-icon---*/
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+
+
+
+
+
+.background{
+  height: 500px;
+  width:90%;
+  background-image: url("../images/Nasa.jpg");
+  background-size: 1200px 500px;
+  margin:30px 50px;
+  border-bottom:5px solid gray;
+
+
+ 
+}
+.content{
+  display: flex;
+  flex-direction: right;
+ 
+}
+.left-side-display{
+  border:1px solid blue;
+  background-color: blue;
+  height: auto;
+  width:300px;
+
+}
+.right-side-display{
+  border:1px solid blue;
+  background-color: blue;
+  height: auto;
+  width:300px;
+
+}
+.nasa-logo{
+  height: 200px;
+  width: 200px;
+  margin-top:10px;
+  margin-left:20px;
+  margin-right:20px;
+
+}
+.Nasa-id{
+  height: auto;
+  width: 900px;
+ 
+
+
+
+
+}
+.Nasa-detail{
+  display: flex;
+  flex-direction: right;
+  justify-content: space-between;
+}
+
+.nasa-me{
+  border: 5px solid gray;
+  height: 200px;
+  width: 200px;
+  margin-top:10px;
+  margin-left:10px;
+  margin-right:10px;
+
+}
+table, th, td{
+  border: 5px solid rgb(30, 30, 90);
+  background-color: rgba(31, 31, 131, 0.897);
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 50px;
+
+
+ 
+}
+
+
+.container{
+  border-bottom:20px solid #abafb6;
+background-color:rgb(218, 215, 215);
+font-size: 20px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+height:auto;
+width: 800px;
+padding-bottom: 20px;
+padding-top: 20px;
+margin-top: none;
+margin-bottom: 50px;
+
+}
+.container h3{
+  color:green;
+  font-size: 40px;
+text-align: center;
+}
+
+.experience-coulmn{
+  column-count: 3;
+  margin-left:30px;
+ justify-content: space-evenly;
 }

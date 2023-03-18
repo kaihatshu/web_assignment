@@ -2,48 +2,59 @@
 
 .panel{
 
-    align-content: center;
-    align-items: center;
-    background-color: #dee1e6;
-    border-bottom: 1px;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    margin-top: -8px;
-    
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  background-color: #dee1e6;
+  border-bottom: 1px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: -8px;
+  
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+
+.head-background{
+ 
+  background-image: url("../images/bg-intro.jpg");
+  background-size: 100%;
+  border: 10px solid #abafb6;
+  border-bottom: 20px solid #abafb6 ;
+  height: 300px;
+  margin-bottom: 30px;
 }
 .logo{
 border: 3px solid cadetblue;
 font-size: 30px;
 width: 300px;
 background-color: whitesmoke;
-
-
-
 margin-left: 60px;
 
 }
+
 .logo span{
 color: orange;
 }
 
 /*----navigation bar through-out all the pages---*/
+
 nav{
 display: flex;
 align-items: center ;
 justify-content: space-between;
+position:relative;
+position: inherit;
 flex-wrap: wrap; 
 width: 100%;
 height: 200px;
-margin-top: 50px;
-margin-bottom: 100px;
-background-color:none;
-background-image: url("../images/bg-intro.jpg");
+margin-top:none;
+margin-bottom: 50px;
+background-color:rgba(75, 72, 72, 0.37);
+background-image: url("./images/bg-intro.jpg");
 background-size:1500px 400px ;
 border-radius: 50px;
 
@@ -60,37 +71,51 @@ font-weight: 100;
 font-style: normal;
 padding: 14px 16px;
 position: relative;
-background-color: white;
+
 
 font-size: 17px;
 }
-nav ul li:hover {
-background-color: orange;
 
-}
 nav ul li a{
 color:black;
 text-decoration: none;
+width: 80px;
+background-color: white;
+
+
+list-style:none;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 100;
+font-style: normal;
+padding: 14px 16px;
+
 
 
 
 }
-.nav ul li a:hover {
-color:black;
-  text-decoration: none;
-  border: 2px solid blueviolet; 
+nav ul li:hover a {
+  color:white;
+text-decoration: none;
+width: 80px;
+background-color:orangered;
+
+
+list-style:none;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 100;
+font-style: normal;
+padding: 14px 16px;
+
 }
 
-/*---when user clicks---*/
-nav ul li a:active{
-background-color: aqua;
-border-bottom:none;
-}
+
+
+
 
 /*---when the user is in the current page---*/
 .active-button {
-margin-left: 10px;
-margin-right: 10px;
 color:white;
 text-align: center;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -100,9 +125,7 @@ padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
 background-color:orange;
-border: 3px solid blue;
-
-width:300px;
+width: 80px;
 
 
 }
@@ -110,99 +133,288 @@ width:300px;
 
 /*---contact page---*/
 .contact{
+  display: flex;
+  flex-direction: right;
     
-    display: flex;
-    flex-direction: right;
-    justify-content: space-between;
+   height: auto;
+ 
     width: 100%;
+    margin-top: 50PX;
+    margin-bottom: 50PX;
 
+}
+.email{
+  display: block;
+  height: 800px;
+  border:5px solid rgb(37, 29, 68);
 }
 .contact-info{
-    border:2px solid rgb(93, 93, 168);
- height: 500px;
- width:850px;
- margin: 20px 40px;
+    border:none;
+ height: auto;
 }
-.grid-container{
-  display:flex;
-  flex-direction: right;
+.newsletter{
+  font-style: italic;
+
 
 }
-
-.grid-item1{
-  display: inline-block;
-  border:2px solid blueviolet;
-  height:400px;
-  width:400px;
-  row-gap: 50px;
-  column-gap: 50px;
-
-}
-
-.grid-item2{
-  display: inline-block;
-  border:2px solid blueviolet;
-  height:400px;
-  width:400px;
-
-}
-
-.grid-item3{
-  display: block;
-  border:2px solid blueviolet;
-  height:400px;
-  width:400px;
-
-}
-
-
-
-
 
 .chat-box{
-    border:2px solid rgb(93, 93, 168);
-    height: 500px;
-    width:350px;
-    margin-top: 20px;
+  border:2px solid rgb(93, 93, 168);
+  height: 500px;
+  width:350px;
+  margin-top: 20px;
 
 }
 .textarea{
-  height:50px;
-  width:300px;
-  margin-left:20px;
-  margin-right:10px;
+height:50px;
+width:300px;
+margin-left:20px;
+margin-right:10px;
 
 }
 .btn{
-  font-size: 20px;
-  color:white;
-  border:1px solid orangered;
-  background-color: orange;
-  display:inline-block;
-  margin-top: 5px;
-  padding: 16px 20px;
-  height: 50px;
-  width:100px;
-  align-items: center;
+font-size: 20px;
+color:white;
+border:1px solid orangered;
+background-color: orange;
+display:inline-block;
+margin-top: 5px;
+padding: 16px 20px;
+height: 50px;
+width:100px;
+align-items: center;
 
 }
 .btn-cancel{
-  font-size: 20px;
-  color:white;
-  border:1px solid orangered;
-  background-color: red;
-  display: inline-block;
-  margin-top: 5px;
-  padding: 16px 20px;
-  height: 50px;
-  width:100px;
-  align-items: center;
+font-size: 20px;
+color:white;
+border:1px solid orangered;
+background-color: red;
+display: inline-block;
+margin-top: 5px;
+padding: 16px 20px;
+height: 50px;
+width:100px;
+align-items: center;
 
 }
 .chat-input{
+text-align: center;
+border:2px solid blueviolet;
+border-radius:50px;
+}
+
+
+
+
+
+/*---Social Media contact---*/
+
+.grid-container{
+  display: flex;
+  flex-direction: right;
+  border:none;
+  background-color: rgba(204, 203, 209, 0.815);
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+/*---Facebook-contact---*/
+
+.grid-item1{
+  border:5px solid rgb(37, 29, 68);
+
+  
+    height:420px;
+    width:400px;
+    background-image: url("../images/facebook-logo.png");
+    background-size: 400px 420px;
+    margin:30px 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+
+.facebook-image{
+  height: 300px;
+  width: 400px;
+  opacity: 0.8;
+
+}
+.facebook-image:hover {
+  height: 300px;
+  width: 400px;
+  opacity: 1;
+
+
+
+}
+.button-facebook{
+  border:10px solid rgb(161, 152, 170);
+  padding:0 6px;
+  height: 120px;
+  width: 400px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: right;
+}
+
+
+
+.button-facebook h3 {
+  color:white;
   text-align: center;
-  border:2px solid blueviolet;
-  border-radius:50px;
+  font-weight: 100;
+  font-style: normal;
+  text-decoration: none;
+  background-color: rgb(22, 65, 129);
+  font-size: 30px;
+  display: inline-block;
+
+
+}
+
+.facebookname-display{
+  height:60px;
+  width:60px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+
+
+}
+
+
+
+
+
+/*----insat-contact----*/
+
+
+.grid-item2{
+ 
+  border:5px solid rgb(37, 29, 68);
+
+  height:420px;
+  width:400px;
+  background-image: url("../images/insta-logo.png");
+  background-size: 500px 400px;
+  margin:30px 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.insta-image{
+  height: 300px;
+  width: 400px;
+  opacity: 0.8;
+
+}
+.insta-image:hover {
+  height: 300px;
+  width: 400px;
+  opacity: 1;
+
+
+
+}
+.button-insta{
+  border:10px solid rgb(161, 152, 170);
+  padding:0 6px;
+  height: 120px;
+  width: 400px;
+  cursor: pointer;
+
+}
+.name-display{
+  height:100px;
+  width:370px;
+
+}
+
+/*----Youtube-contact----*/
+
+.grid-container1{
+  display: block;
+  border:5px solid rgba(37, 29, 68,);
+  background-color: rgba(204, 203, 209, 0.815);
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+
+
+.grid-item3{
+ 
+  border:5px solid rgb(37, 29, 68);
+
+  height:420px;
+  width:400px;
+  background-image: url("../images/-logo.png");
+  background-size: 500px 400px;
+  margin: 30px 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.youtube-image{
+  height: 300px;
+  width: 400px;
+  opacity: 0.8;
+
+}
+.youtube-image:hover {
+  height: 300px;
+  width: 400px;
+  opacity: 1;
+
+
+
+}
+.button-youtube{
+  border:10px solid rgb(161, 152, 170);
+  padding:0 6px;
+  height: 120px;
+  width: 400px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: right;
+  
+
+}
+.button-youtube h3 {
+  color:black;
+  text-align:center;
+  font-weight: 100;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+
+}
+.youtubename-display{
+  height:80px;
+  width:80px;
+  display: inline-block;
+  margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+.end{
+  height:100px;
+  width:100%;
 }
 
 @media only screen and (max-width: 768px) {

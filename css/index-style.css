@@ -17,13 +17,15 @@
     flex-direction: column-reverse;
     flex-wrap: wrap;
 }
+
 .head-background{
    
     background-image: url("../images/bg-intro.jpg");
     background-size: 100%;
-    border: 10px solid #abafb6;
-    border-bottom: 20px solid #abafb6 ;
-    height: 400px;
+    border-top: 5px solid #abafb6;
+    border-top: 5px solid #abafb6;
+    border-bottom: 5px solid #abafb6 ;
+    height: 300px;
     margin-bottom: 30px;
 }
 .logo{
@@ -40,21 +42,24 @@ color: orange;
 }
 
 /*----navigation bar through-out all the pages---*/
+
 nav{
 display: flex;
 align-items: center ;
 justify-content: space-between;
-position:relative;
-position: inherit;
 flex-wrap: wrap; 
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+padding: 5px;
+
 width: 100%;
-height: 200px;
-margin-top: 50px;
-margin-bottom: 50px;
+height: 100px;
+margin-top:none;
 background-color:rgba(75, 72, 72, 0.37);
 background-image: url("./images/bg-intro.jpg");
 background-size:1500px 400px ;
-border-radius: 50px;
+border-radius: 20px;
 
 }
 nav ul li {
@@ -68,7 +73,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-weight: 100;
 font-style: normal;
 padding: 14px 16px;
-position: relative;
+
 
 
 font-size: 17px;
@@ -132,18 +137,21 @@ width: 80px;
 
 
 /*---Home page or index.html(style)----*/
-.head{
+
+/*---Introduction of Me in Home page--*/
+.introduction-container{
     border-top:20px solid #abafb6;
     border-bottom:20px solid #abafb6;
 background-color:rgb(218, 215, 215);
 display:flex;
 flex-direction: right;
-justify-content: space-between;
+justify-content: space-evenly;
+
 
 font-size: 20px;
 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-height:500px;
+height:400px;
 width: 100%;
 padding-bottom: 20px;
 padding-top: 20px;
@@ -153,45 +161,66 @@ margin-bottom: 50px;
 
 
 }
-.head-text{
-margin-top: 10%;
-font-size: 30px;
-margin-left: 10%;
+.introduction-container-text {
 
+ height: 300px;
+ width: 500px;
+ border:none;
+ font-size: 30px;
+
+
+ text-align: center;
+margin-top: 50px;
 
 }
-.head-text h1{
-font-size: 40px;
-
-
-
+ .introduction-container-text{
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count:1;
 }
-.head-text h1 span{
+
+
+@keyframes slidein {
+  from {
+    margin-left: 300%;
+    width: 40%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 40%;
+  }
+}
+.introduction-container-text h1 span{
 color: rebeccapurple;
 }
-.Me{
+
+
+/*---Css of photo present in Home page---*/
+.introduction-container-my-image{
     border:none;
-    height:500px;
-    width:auto;
-    margin-right: 10px;
+    height:400px;
+    width:400px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
-.info{
+.about-container{
 display: flex;
 flex-direction: right;
-background-image: url("../images/background-info.jpg");
+background-image: url("../images/moonlanding.jpg");
 background-size: 1350px 700px;
 
 margin-top: 40px;
 width:100%;
-height: 600px;
+height: 700px;
 
 }
-.info:hover{
+.about-container:hover{
 display: flex;
 flex-direction: right;
-background-image: url("../images/background-info.jpg");
+background-image: url("../images/moonlanding.jpg");
 background-size: 1350px 700px;
 margin-top: 40px;
 width:100%;
@@ -199,54 +228,90 @@ height: 700px;
 
 
 }
+.about-container-style-display{
+  display: flex;
+  flex-direction: right;
+  width: auto;
+}
 
-.write{
-color:rgb(155, 146, 146);
-display:block;
-font-size: 30px;
-height: 600px;
-width: 700px;
+.about-container-info{
+color:rgb(207, 198, 198);
+
+font-size: 25px;
+height: 700px;
+width: 900px;
 background-color: rgba(37, 29, 68, 0.479);
+margin-left:20px;
+
 
 
 }
-.write:hover{
-color:rgb(155, 146, 146);
-font-size: 30px;
+.about-container-info:hover{
+color:rgb(233, 225, 225);
+font-size: 25px;
 height: 700px;
-width: 700px;
+width: 900px;
 background-color: rgb(37, 29, 68);
 
 }
-.txt:hover{
- zoom:150%;
- color:red;
+.about-container-info h2{
+  text-align: center;
+}
+.about-container-info-text{
+  height:220px;
+  width:400px;
+
+  margin-top: -20px;
+  margin-left: -100px;
+}
+.about-container-info-text:hover{
+ zoom:120%;
+ color:rgb(233, 225, 225);
+}
+
+
+.end-container-launchpad{
+  
+height: 600px;
+width:700px;
 }
 
 
 
-.end{
+
+
+.end-container{
+  border-top:5px solid rgb(37, 37, 73);
+  border-bottom:5px solid rgb(37, 37, 73);
+
+  background-color:black;
+  background-size: 1350px 700px;
+  margin-top: 40px;
+  width:100%;
+  height: 100px;
+  color:white;
+}
+.end-container h2 {
+  text-align: center;
+
+
+}
+
+
+@media screen and (max-width: 750px) {
+    #main-menu {
+      display: none;
+    }
+    #hamburger-menu {
+      display: inline;
+    }
+  
+
+
+@media only screen and (max-width: 750px) {
+    body {
+      background-color: lightblue;
+    }
+  }
     
-    display: flex;
-    flex-direction: right;
-    background-image: url("");
-    background-size: 1350px 700px;
-    margin-top: 40px;
-    width:100%;
-    height: 400px;
-
-
-}
-
-.end:hover{
-    border-top:5px solid rgb(37, 37, 73);
-    border-bottom:5px solid rgb(37, 37, 73);
-    display: flex;
-    flex-direction: right;
-    background-color:black;
-    background-size: 1350px 700px;
-    margin-top: 40px;
-    width:100%;
-    height: 400px;
-    color:white;
 }
