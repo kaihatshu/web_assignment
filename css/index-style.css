@@ -2,30 +2,30 @@
 
 .panel{
 
-    align-content: center;
-    align-items: center;
+
+
     background-color: #dee1e6;
     border-bottom: 1px;
-    display: flex;
+   
     height: 40px;
+   
     justify-content: center;
-    position: relative;
-    text-align: center;
+   
     width: 100%;
     margin-top: -8px;
-    
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+
+
 }
 
 .head-background{
    
     background-image: url("../images/bg-intro.jpg");
     background-size: 100%;
-    border-top: 5px solid #abafb6;
-    border-top: 5px solid #abafb6;
+   
     border-bottom: 5px solid #abafb6 ;
-    height: 300px;
+    height: 200px;
+    width: auto;
+    margin-top: -100px;
     margin-bottom: 30px;
 }
 .logo{
@@ -51,14 +51,12 @@ flex-wrap: wrap;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
-padding: 5px;
-
+padding: 5px 0;
 width: 100%;
 height: 100px;
 margin-top:none;
 background-color:rgba(75, 72, 72, 0.37);
-background-image: url("./images/bg-intro.jpg");
-background-size:1500px 400px ;
+
 border-radius: 20px;
 
 }
@@ -155,7 +153,7 @@ height:400px;
 width: 100%;
 padding-bottom: 20px;
 padding-top: 20px;
-margin-top: 50px;
+margin-top: 10px;
 margin-bottom: 50px;
 
 
@@ -211,7 +209,7 @@ display: flex;
 flex-direction: right;
 background-image: url("../images/moonlanding.jpg");
 background-size: 1350px 700px;
-
+margin-bottom: 10px;
 margin-top: 40px;
 width:100%;
 height: 700px;
@@ -239,9 +237,9 @@ color:rgb(207, 198, 198);
 
 font-size: 25px;
 height: 700px;
-width: 900px;
+width:800px;
 background-color: rgba(37, 29, 68, 0.479);
-margin-left:20px;
+
 
 
 
@@ -250,7 +248,7 @@ margin-left:20px;
 color:rgb(233, 225, 225);
 font-size: 25px;
 height: 700px;
-width: 900px;
+width: 800px;
 background-color: rgb(37, 29, 68);
 
 }
@@ -261,8 +259,7 @@ background-color: rgb(37, 29, 68);
   height:220px;
   width:400px;
 
-  margin-top: -20px;
-  margin-left: -100px;
+
 }
 .about-container-info-text:hover{
  zoom:120%;
@@ -273,7 +270,7 @@ background-color: rgb(37, 29, 68);
 .end-container-launchpad{
   
 height: 600px;
-width:700px;
+width:800px;
 }
 
 
@@ -298,20 +295,212 @@ width:700px;
 }
 
 
-@media screen and (max-width: 750px) {
-    #main-menu {
-      display: none;
-    }
-    #hamburger-menu {
-      display: inline;
-    }
+@media screen and (max-width: 600px) {
+
+.panel{
+  background-color: #dee1e6;
+  border-bottom: 1px;
+  height: 40px;
+  justify-content: center;
+  width: 100%;
+  margin-top: -8px;
+  
+}
+
+.logo{
+  border: 3px solid white;
+  font-size: 30px;
+  width: 200px;
+  background-color: cadetblue;
+  transition: 1s;
+
+
+
+}
+
+
+/*---Introduction of Me in Home page--*/
+.introduction-container{
+  border-top:20px solid #abafb6;
+  border-bottom:20px solid #abafb6;
+background-color:rgb(218, 215, 215);
+display:block;
+
+justify-content: space-evenly;
+
+
+font-size: 20px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+height:800px;
+width: 100%;
+padding-bottom: 20px;
+padding-top: 20px;
+margin-top: 10px;
+margin-bottom: 50px;
+transition: 0.5ms;
+
+
+
+}
+.introduction-container-text {
+
+height: 300px;
+width: 500px;
+border:none;
+font-size: 30px;
+
+
+text-align: center;
+margin-top: 50px;
+
+}
+
+
+.introduction-container-text{
+ animation-duration: 3s;
+ animation-name: slidein;
+ animation-iteration-count:1;
+}
+
+
+@keyframes slidein {
+ from {
+   margin-left: 300%;
+   width: 40%;
+ }
+
+ to {
+   margin-left: 0%;
+   width: 40%;
+ }
+
+}
+
+.about-container{
+  display: flex;
+  flex-direction: right;
+  background-image: url("../images/moonlanding.jpg");
+  background-size: 1350px 700px;
+  
+  margin-top: 40px;
+  width:100%;
+  height: 800px;
+  transition: 1s;
+  
+  }
+  .about-container:hover{
+  display: flex;
+  flex-direction: right;
+  background-image: url("../images/moonlanding.jpg");
+  background-size: 1350px 700px;
+  margin-top: 40px;
+  width:100%;
+  height: 800px;
+  transition: 1s;
+  
+  
+  }
+  .about-container-style-display{
+    display: flex;
+    flex-direction: right;
+    
+    width: auto;
+  }
+  
+  .about-container-info{
+  color:rgb(207, 198, 198);
+  
+  font-size: 20px;
+  height: 700px;
+  width:600px;
+  background-color: rgba(37, 29, 68, 0.479);
+  margin-bottom: 5px;
+  
+  
+  
+  }
+  .about-container-info:hover{
+  color:rgb(233, 225, 225);
+  font-size: 20px;
+  height: 700px;
+  width:600px;
+  background-color: rgb(37, 29, 68);
+  margin-bottom: 5px;
+  }
+  .about-container-info h2{
+    text-align: center;
+  }
+  .about-container-info-text{
+    height:220px;
+    width:200px;
+    margin-right: -5px;
+    margin-left: -120px;
+  }
+
+  
+  .end-container-launchpad{
+    height:600px;
+    width:380px;
+    
+
+  }
+  
+  
   
 
-
-@media only screen and (max-width: 750px) {
-    body {
-      background-color: lightblue;
-    }
+@media screen and (max-width: 1350px) {
+  .logo{
+    border: 3px solid white;
+    font-size: 30px;
+    width: 200px;
+    background-color: cadetblue;
+    transition: 2s;
   }
+
+nav{
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px 0;
+  width: 100%;
+  height: 100px;
+  margin-top:none;
+  background-color:rgba(75, 72, 72, 0.37);
+  border-radius: 20px;
+  transition:1s;
+  }
+
+  .nav ul li {
+
     
+    display: inline-block;
+    list-style:none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+nav ul li a{
+  color:black;
+  text-decoration: none;
+  width: 80px;
+  background-color: white;
+  
+  
+  list-style:none;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 14px 16px;
+  
+}
+}
 }

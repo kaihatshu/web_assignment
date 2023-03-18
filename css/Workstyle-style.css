@@ -246,26 +246,26 @@ width: 80px;
 
  
 }
-.content{
+.workexperience-container-display{
   display: flex;
   flex-direction: right;
  
 }
-.left-side-display{
+.workexperience-container-left-side-display{
   border:1px solid blue;
   background-color: blue;
   height: auto;
   width:300px;
 
 }
-.right-side-display{
+.workexperience-container-right-side-display{
   border:1px solid blue;
   background-color: blue;
   height: auto;
   width:300px;
 
 }
-.nasa-logo{
+.workexperience-container-nasa-logo{
   height: 200px;
   width: 200px;
   margin-top:10px;
@@ -273,7 +273,7 @@ width: 80px;
   margin-right:20px;
 
 }
-.Nasa-id{
+.workexperience-container-Nasa-id{
   height: auto;
   width: 900px;
  
@@ -282,13 +282,13 @@ width: 80px;
 
 
 }
-.Nasa-detail{
+.workexperience-container-Nasa-detail{
   display: flex;
   flex-direction: right;
   justify-content: space-between;
 }
 
-.nasa-me{
+.workexperience-container-nasa-me{
   border: 5px solid gray;
   height: 200px;
   width: 200px;
@@ -309,7 +309,7 @@ table, th, td{
 }
 
 
-.container{
+.workexperience-container-info{
   border-bottom:20px solid #abafb6;
 background-color:rgb(218, 215, 215);
 font-size: 20px;
@@ -323,14 +323,51 @@ margin-top: none;
 margin-bottom: 50px;
 
 }
-.container h3{
+.workexperience-container-info h3{
   color:green;
   font-size: 40px;
 text-align: center;
 }
 
-.experience-coulmn{
+.workexperience-container-experience-coulmn{
   column-count: 3;
   margin-left:30px;
  justify-content: space-evenly;
+}
+.workexperience-container-grid-image{
+  display:flex;
+flex-direction: right;
+justify-content: space-evenly;
+
+}
+
+
+.workexperience-container-grid-image-nasa{
+
+
+  height:300px;
+  width:300px;
+  background-color: #bfc3c9;
+  margin:10px 10px;
+  padding: 5px 5px;
+
+}
+
+
+/*----end---*/
+.end-container{
+  border-top:5px solid rgb(37, 37, 73);
+  border-bottom:5px solid rgb(37, 37, 73);
+
+  background-color:black;
+  background-size: 1350px 700px;
+  margin-top: 40px;
+  width:100%;
+  height: 100px;
+  color:white;
+}
+.end-container h2 {
+  text-align: center;
+
+
 }
