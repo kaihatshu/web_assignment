@@ -12,76 +12,98 @@
 <body>
     <div class="panel"></div>
     
-    <div class="head-background">
-
-
-    <nav>  
-        <h2 class="logo">Kaihatshu <br/>
-            <span>HERE </span></h2> 
-        <ul>
-    
-            <li>  <a  href="index.html"/>HOME</a></li>
-            <li>  <a  href="portfolio.html"/>Portfolio</a></li>
-            <li>  <a href="workexperience.html"/> Workexperience</a></li>
-            <li>   <a  class="active-button" href="contact.html"/> Contact</a> </li>
-            <li>   <a href="Sitereport.html"/> Sitereport</a></li>   
-              </ul>
+    <div class="nav-background">
+        <nav >
+          
+          <div class="logo">
+            <h2>Kaihatshu <br/>
+                <span>HERE </span></h2>
+            </div>
              
-          </nav>
-    </div>
-
-          <div class="contact">
+        
+                <label class="hamburger-menu">
+                    <input type="checkbox" />
+                  </label>
+                  <aside class="sidebar">
+                    <nav class="menu-style">
+                        <ul>
+    
+                            <li>  <a  href="index.html">HOME</a></li>
+                            <li>  <a href="portfolio.html">Portfolio</a></li>
+                            <li>  <a href="workexperience.html"> Workexperience</a></li>
+                            <li>  <a  class="active-button" href="contact.html"> Contact</a></li>
+                            <li>   <a href="Sitereport.html"> Sitereport</a></li>   
+                              </ul>
+                              
+                    </nav>
+                  </aside>
+                
+            </nav> 
+        </div>  
+        <div class="head-background">
+    
+       
+           
+                </div>
+          
           <div class="email">
-          <div class="contact-info">
-            <h2>you can contact me via 
-                the link provided down below
-                or you can chat with me in the chat box
-            </h2>
-        </div>
-
         <div class="news-letter">
-            <h1>here you can subscribe to my News letter</h1>
+            <h1>Here you can subscribe to my News letter</h1>
+           
+            <form>
+                <div class="gap">
+              <label for="name" class="name">Enter your Name:</label>
+             <input type="text" class="name" id="name" name="name">
+            </div>
+            <div class="gap">
+              <label for="email" class="email-id">Enter email address:</label>
+             
+              <input type="email"  class="email-id" id="emails" name="emails" multiple>
+            </div>
 
+              <div class="gap">
+              <input class="submit" type="submit">
+            </div>
+            </form>
         </div>
     </div>
+    <div class="contact">
+    <div class="contact-info">
+    <h2>you can contact me via 
+        the link provided down below
+        or you can chat with me in the chat box
+        <div class="grid-container">
+       <a href="https://www.facebook.com/login/" target="_blank"><img  class="social-media-logo" src="./images/facebook (1).png" alt="facebook icon"/> </a>
+      
+       <a href="ihttps://www.instagram.com/kaihatshu/" target="_blank"><img  class="social-media-logo" src="./images/instagram.png" alt="insta icon"/> </a> 
+       <a href="https://www.youtube.com/" target="_blank"><img  class="social-media-logo" src="./images/youtube.png" alt="youtube icon"/> </a> 
+  
+    </div>
 
+    </div>
+
+     
+   
         <div class="chat-box">
             <h3> Chat with me here</h3>
             <form class="chat-input">
             <label for="msg"><b>Message</b></label>
             <textarea class="textarea" placeholder="Type message.." name="msg" required></textarea>
             
-                  <button type="submit" class="btn">Send</button>
-                 <button type="button" class="btn-cancel" onclick="closeForm()">Cancel</button>
+                  <button type="submit" class="btn" onclick="submit">Send</button>
+    
              </form>
+            </div>
            </div>
         </div>
 
 
 
 
-         
-            <div class="grid-container">
+        
+           
 
-                <div class="grid-item1"><img class="facebook-image" src= "./images/facebook-image.jpg" alt="Image of Me (Bikash) standing with whirt shirt and pant."/>
-                    <button class="button-facebook"> <a target="_blank" href="https://www.facebook.com"/><img class="facebookname-display"src="./images/facebook.png" alt="facebook name display"/>
-                        <h3>Bikash Subedi</h3>  </a></button></div>
-               
-                    <div class="grid-item2"><img class="insta-image" src= "./images/insta-image.png" alt="Image of Me (Bikash)with violin."/>
-                
-                        <button class="button-insta"> <a target="_blank" href="https://www.instagram.com/kaihatshu/"/><img class="name-display"src="./images/Screens.png" alt="insta name display"/></a></button>   
-               </div> 
-              </div>
-              <div class="grid-container1">
-               
-                <div class="grid-item3">
-                    <img class="youtube-image" src= "./images/youtube-image.png" alt="Image of Me (Bikash)with violin."/>
-                
-                        <button class="button-youtube"> <a target="_blank"href="https://www.youtube.com"/><img class="youtubename-display"src="./images/youtube-logo.png" alt="youtube name display"/>
-                        <h3>Bikash Subedi</h3></a></button>   
-               </div> 
-                </div>
-              </div>
+        
     
      
         
@@ -93,8 +115,10 @@
 
 
 
-<div class="end">
-
+<div class="end-container">
+   <H2>
+      "click the sitereport page"
+   </H2>
 </div>
 
 </body>

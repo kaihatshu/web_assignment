@@ -16,12 +16,12 @@
 
 
 }
+/* CSS for menuToggle */
 
 .head-background{
    
     background-image: url("../images/bg-intro.jpg");
     background-size: 100%;
-   
     border-bottom: 5px solid #abafb6 ;
     height: 200px;
     width: auto;
@@ -30,10 +30,11 @@
 }
 .logo{
 border: 3px solid cadetblue;
-font-size: 30px;
-width: 300px;
+font-size: 20px;
+width: 400px;
+height: 100px;
 background-color: whitesmoke;
-margin-left: 60px;
+margin-left: 10px;
 
 }
 
@@ -42,9 +43,12 @@ color: orange;
 }
 
 /*----navigation bar through-out all the pages---*/
+.menu-style{
+  background-color: none;
+}
 
-nav{
-display: flex;
+.nav-background{
+  display: flex;
 align-items: center ;
 justify-content: space-between;
 flex-wrap: wrap; 
@@ -56,6 +60,18 @@ width: 100%;
 height: 100px;
 margin-top:none;
 background-color:rgba(75, 72, 72, 0.37);
+border-radius: 20px;
+
+
+}
+nav{
+display: flex;
+align-items: center ;
+justify-content: space-between;
+flex-wrap: wrap; 
+width: 100%;
+height: 100px;
+margin-top:none;
 
 border-radius: 20px;
 
@@ -290,39 +306,33 @@ width:800px;
 }
 .end-container h2 {
   text-align: center;
-
-
 }
+
 
 
 @media screen and (max-width: 600px) {
 
-.panel{
-  background-color: #dee1e6;
-  border-bottom: 1px;
-  height: 40px;
-  justify-content: center;
-  width: 100%;
-  margin-top: -8px;
-  
-}
 
 .logo{
   border: 3px solid white;
   font-size: 30px;
   width: 200px;
-  background-color: cadetblue;
+  height:60px;
+  background-color: rgb(19, 20, 20);
   transition: 1s;
 
 
 
 }
+.logo h2 {
+color: antiquewhite;
+}
 
 
 /*---Introduction of Me in Home page--*/
 .introduction-container{
-  border-top:20px solid #abafb6;
-  border-bottom:20px solid #abafb6;
+  border-top:10px solid #abafb6;
+  border-bottom:10px solid #abafb6;
 background-color:rgb(218, 215, 215);
 display:block;
 
@@ -332,20 +342,30 @@ justify-content: space-evenly;
 font-size: 20px;
 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-height:800px;
+height:600px;
 width: 100%;
 padding-bottom: 20px;
 padding-top: 20px;
 margin-top: 10px;
-margin-bottom: 50px;
+margin-bottom: 5px;
 transition: 0.5ms;
 
 
 
 }
+.introduction-container-my-image{
+  border:none;
+  height:400px;
+  width:400px;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
 .introduction-container-text {
 
-height: 300px;
+height: 400px;
 width: 500px;
 border:none;
 font-size: 30px;
@@ -382,7 +402,7 @@ margin-top: 50px;
   flex-direction: right;
   background-image: url("../images/moonlanding.jpg");
   background-size: 1350px 700px;
-  
+  margin-bottom: 10px;
   margin-top: 40px;
   width:100%;
   height: 800px;
@@ -395,6 +415,7 @@ margin-top: 50px;
   background-image: url("../images/moonlanding.jpg");
   background-size: 1350px 700px;
   margin-top: 40px;
+  margin-bottom: 10px;
   width:100%;
   height: 800px;
   transition: 1s;
@@ -428,9 +449,7 @@ margin-top: 50px;
   background-color: rgb(37, 29, 68);
   margin-bottom: 5px;
   }
-  .about-container-info h2{
-    text-align: center;
-  }
+ 
   .about-container-info-text{
     height:220px;
     width:200px;
@@ -445,6 +464,7 @@ margin-top: 50px;
     
 
   }
+}
   
   
   
@@ -452,11 +472,63 @@ margin-top: 50px;
 @media screen and (max-width: 1350px) {
   .logo{
     border: 3px solid white;
-    font-size: 30px;
+    font-size: 25px;
     width: 200px;
     background-color: cadetblue;
-    transition: 2s;
+    transition: 1s;
+    margin: none;
   }
+
+nav{
+  display: flex;
+  align-items: center ;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px 0;
+  width: 100%;
+  height: 150px;
+  margin-top:none;
+
+  border-radius: 20px;
+  transition:3s;
+  }
+
+  nav ul li {
+
+    
+    display: inline-block;
+    list-style:none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 7px 8px;
+    font-size: 15px;
+    transition: 2s;
+}
+nav ul li a{
+  color:black;
+  text-decoration: none;
+  width: 40px;
+  background-color: white;
+  
+  
+  list-style:none;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding: 7px 8px;
+  transition: 2s;
+}
+}
+
+
+  @media screen and (max-width: 900px) {
+  
 
 nav{
   display: flex;
@@ -470,12 +542,12 @@ nav{
   width: 100%;
   height: 100px;
   margin-top:none;
-  background-color:rgba(75, 72, 72, 0.37);
+
   border-radius: 20px;
-  transition:1s;
+  transition:3s;
   }
 
-  .nav ul li {
+  nav ul li {
 
     
     display: inline-block;
@@ -484,13 +556,14 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 100;
     font-style: normal;
-    padding: 14px 16px;
-    font-size: 17px;
+    padding: 7px 8px;
+    font-size: 15px;
+    transition: 0.15ms;
 }
 nav ul li a{
   color:black;
   text-decoration: none;
-  width: 80px;
+  width: 40px;
   background-color: white;
   
   
@@ -499,8 +572,117 @@ nav ul li a{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 100;
   font-style: normal;
-  padding: 14px 16px;
+  padding: 7px 8px;
   
 }
+
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+
+position: fixed;
+top: 0;
+padding: 5px 0;
+float: right;
+  top: var(--hamburger-margin);
+right: var(--hamburger-margin);
+  z-index: 2;
+  cursor: pointer;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: rgb(112, 117, 117);
+  --background: white;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu:has(input:checked) {
+  --foreground: white;
+  --background: #333;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  transition: translate var(--animation-timing);
+  translate: 300%;
+  padding: 0.5rem 1rem;
+  padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+  background-color: var(--foreground);
+  color: var(--background);
+  max-width: 10rem;
+  min-height: 100vh;
+  float: right;
+
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+
+
 }

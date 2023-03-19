@@ -22,17 +22,19 @@
    
     background-image: url("../images/bg-intro.jpg");
     background-size: 100%;
-    border: 10px solid #abafb6;
-    border-bottom: 20px solid #abafb6 ;
-    height: 300px;
+    border-bottom: 5px solid #abafb6 ;
+    height: 200px;
+    width: auto;
+    margin-top: -100px;
     margin-bottom: 30px;
 }
 .logo{
 border: 3px solid cadetblue;
-font-size: 30px;
-width: 300px;
+font-size: 20px;
+width: 400px;
+height: 100px;
 background-color: whitesmoke;
-margin-left: 60px;
+margin-left: 10px;
 
 }
 
@@ -41,22 +43,37 @@ color: orange;
 }
 
 /*----navigation bar through-out all the pages---*/
+.menu-style{
+  background-color: none;
+}
 
+.nav-background{
+  display: flex;
+align-items: center ;
+justify-content: space-between;
+flex-wrap: wrap; 
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+padding: 5px 0;
+width: 100%;
+height: 100px;
+margin-top:none;
+background-color:rgba(75, 72, 72, 0.37);
+border-radius: 20px;
+
+
+}
 nav{
 display: flex;
 align-items: center ;
 justify-content: space-between;
-position:relative;
-position: inherit;
 flex-wrap: wrap; 
 width: 100%;
-height: 200px;
+height: 100px;
 margin-top:none;
-margin-bottom: 50px;
-background-color:rgba(75, 72, 72, 0.37);
-background-image: url("./images/bg-intro.jpg");
-background-size:1500px 400px ;
-border-radius: 50px;
+
+border-radius: 20px;
 
 }
 nav ul li {
@@ -70,7 +87,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-weight: 100;
 font-style: normal;
 padding: 14px 16px;
-position: relative;
+
 
 
 font-size: 17px;
@@ -109,6 +126,8 @@ font-style: normal;
 padding: 14px 16px;
 
 }
+
+
 
 
 
@@ -262,3 +281,287 @@ width: 80px;
   
   
   }
+
+  
+@media screen and (max-width: 900px) {
+
+
+    .about-container h2{
+       text-align: center;
+        font-size: 40px;
+        margin-bottom: none;
+    }
+    
+    .about-container-info-column-about-me{
+    
+     margin-left:30px;
+     display: block;
+     column-count: 1;
+     justify-content: space-between;
+    }
+
+    /*---skills-column---*/
+    
+    
+    .about-container-info-column-skills {
+            column-count: 1;
+            margin-left:30px;
+            justify-content: space-between;
+    }
+    
+
+
+        
+    
+    
+    
+    .about-container-skill-grid-image{
+        display: block;
+        flex-direction: right;
+        justify-content: space-evenly;
+    
+    
+    }
+    
+}
+  
+
+@media screen and (max-width: 1350px) {
+    .logo{
+      border: 3px solid white;
+      font-size: 25px;
+      width: 200px;
+      background-color: cadetblue;
+      transition: 1s;
+      margin: none;
+    }
+  
+  nav{
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+    width: 100%;
+    height: 150px;
+    margin-top:none;
+  
+    border-radius: 20px;
+    transition:3s;
+    }
+  
+    nav ul li {
+  
+      
+      display: inline-block;
+      list-style:none;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      padding: 7px 8px;
+      font-size: 15px;
+      transition: 2s;
+  }
+  nav ul li a{
+    color:black;
+    text-decoration: none;
+    width: 40px;
+    background-color: white;
+    
+    
+    list-style:none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 7px 8px;
+    transition: 2s;
+  }
+  }
+  
+  
+    @media screen and (max-width: 900px) {
+    
+  
+  nav{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
+    width: 100%;
+    height: 100px;
+    margin-top:none;
+  
+    border-radius: 20px;
+    transition:3s;
+    }
+  
+    nav ul li {
+  
+      
+      display: inline-block;
+      list-style:none;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      padding: 7px 8px;
+      font-size: 15px;
+      transition: 0.15ms;
+  }
+  nav ul li a{
+    color:black;
+    text-decoration: none;
+    width: 40px;
+    background-color: white;
+    
+    
+    list-style:none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 7px 8px;
+    
+  }
+  
+  
+  .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+  
+  position: fixed;
+  top: 0;
+  padding: 5px 0;
+  float: right;
+    top: var(--hamburger-margin);
+  right: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  :root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: rgb(112, 117, 117);
+    --background: white;
+    --hamburger-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  }
+  
+  .hamburger-menu:has(input:checked) {
+    --foreground: white;
+    --background: #333;
+  }
+  
+  .hamburger-menu:has(input:focus-visible)::before,
+  .hamburger-menu:has(input:focus-visible)::after,
+  .hamburger-menu input:focus-visible {
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
+  }
+  
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+      rotate var(--animation-timing), translate var(--animation-timing),
+      background-color var(--animation-timing);
+  }
+  
+  .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  
+  .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+  
+  .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+  
+  .sidebar {
+    transition: translate var(--animation-timing);
+    translate: 1000%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: var(--foreground);
+    color: var(--background);
+    max-width: 10rem;
+    min-height: 100vh;
+    float: right;
+  
+  }
+  
+  .hamburger-menu:has(input:checked) + .sidebar {
+    translate: 0;
+  }
+  
+  
+  }
+
+
+
+
+  @media screen and (max-width: 600px) {
+
+
+    .logo{
+      border: 3px solid white;
+      font-size: 30px;
+      width: 200px;
+      height:60px;
+      background-color: rgb(19, 20, 20);
+      transition: 1s;
+    
+    
+    
+    }
+    .logo h2 {
+    color: antiquewhite;
+    }
+  }      
