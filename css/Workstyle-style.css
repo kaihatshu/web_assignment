@@ -520,13 +520,11 @@ nav ul li a{
   flex-direction: column;
   gap: var(--hamburger-gap);
   width: max-content;
-
-position: fixed;
+position: sticky;
 top: 0;
 padding: 5px 0;
-float: right;
   top: var(--hamburger-margin);
-right: var(--hamburger-margin);
+left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
 }
@@ -605,21 +603,20 @@ body {
 
 .sidebar {
   transition: translate var(--animation-timing);
-  translate: 1000%;
+  translate: 300%;
   padding: 0.5rem 1rem;
   padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
   background-color: var(--foreground);
   color: var(--background);
   max-width: 10rem;
   min-height: 100vh;
-  float: right;
+
 
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
 }
-
 
 }
 

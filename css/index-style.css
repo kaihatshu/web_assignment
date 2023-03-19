@@ -342,7 +342,7 @@ justify-content: space-evenly;
 font-size: 20px;
 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-height:600px;
+height:800px;
 width: 100%;
 padding-bottom: 20px;
 padding-top: 20px;
@@ -365,7 +365,7 @@ transition: 0.5ms;
 
 .introduction-container-text {
 
-height: 400px;
+height: 300px;
 width: 500px;
 border:none;
 font-size: 30px;
@@ -584,13 +584,11 @@ nav ul li a{
   flex-direction: column;
   gap: var(--hamburger-gap);
   width: max-content;
-
-position: fixed;
+position: sticky;
 top: 0;
 padding: 5px 0;
-float: right;
   top: var(--hamburger-margin);
-right: var(--hamburger-margin);
+left: var(--hamburger-margin);
   z-index: 2;
   cursor: pointer;
 }
@@ -676,7 +674,7 @@ body {
   color: var(--background);
   max-width: 10rem;
   min-height: 100vh;
-  float: right;
+
 
 }
 
